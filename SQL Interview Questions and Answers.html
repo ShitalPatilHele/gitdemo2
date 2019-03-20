@@ -1,0 +1,813 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link href="http://a4academics.com/templates/beez3/css/bootstrapNew.css?d=version94" rel="stylesheet" />
+<link rel="author" href="https://plus.google.com/u/0/+GeorgeJohnA"/>
+<link rel="publisher" href="https://plus.google.com/u/1/b/110210041022871528681/+A4academics"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes"/>
+<meta name="HandheldFriendly" content="true" />
+<meta name="apple-mobile-web-app-capable" content="YES" />
+<meta property="og:title" content="SQL Interview Questions and Answers" />
+<meta property="og:description" content="Frequently Asked Database,DBMS and SQL Interview Questions and Answers for Freshers, Experienced developers in Oracle,MS SQL Server and MySQL Database" />
+<meta property="og:image" content="http://a4academics.com/images/a4logo.jpg" />
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <base href="http://a4academics.com/interview-questions/53-database-and-sql/411-sql-interview-questions-and-answers-database" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="SQL Interview, SQL Interview Questions, Database Interview Questions" />
+  <meta name="author" content="Super User" />
+  <meta name="description" content="Frequently Asked Database,DBMS and SQL Interview Questions and Answers for Freshers, Experienced developers in Oracle,MS SQL Server and MySQL Database" />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>SQL Interview Questions and Answers</title>
+  <link href="http://a4academics.com/interview-questions/53-database-and-sql/411-sql-interview-questions-and-answers-database" rel="canonical" />
+  <link href="/templates/beez3/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <script type="text/javascript">
+var sfolder = '';
+var extravote_text=Array('Your browser does not support AJAX!','Loading','Thank you for voting!','You need to login to rate this item.','You have already rated this item.','%s Votes','%s Vote');
+  </script>
+
+
+<!-- DON'T DELETE-->
+<script type="text/javascript">
+var wi = window, docu = document, el = docu.documentElement, bo = docu.getElementsByTagName('body')[0], scrWidth = wi.innerWidth || el.clientWidth || bo.clientWidth;
+var isMobile = false;
+if (scrWidth < 600) {
+	isMobile = true;
+}
+</script>
+
+</head>
+<body>
+<!-- NAVBAR -->
+
+<div class="navbar-wrapper">
+<div style="width:100%;position:absolute;top:88px;height:34px;background-color:#039FD6;" class="nomob"></div>
+<div class="container">
+<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> </button>
+<a class="navbar-brand" href="http://a4academics.com"><img src="http://a4academics.com/templates/beez3/img/a4academics_logo.png" alt="a4academics" /></a>
+<div class="search-site">
+<form id="form1" action="http://a4academics.com/search-results" method="get" name="searchForm">
+<input type="text" class="textbox" name="q" placeholder="What are you looking for?"/>
+<input type="button" value="Search" class="search-btn" onclick="document.searchForm.submit()" />
+</form>
+</div></div>
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="home"><a href="http://a4academics.com/">Home</a></li>
+<li class="career-jobs"><a href="http://a4academics.com/careers-guidance-jobs">Career Tips</a></li>
+<li class="interview-questions"><a href="http://a4academics.com/interview-questions">Interview Questions</a></li>
+<li class="list-jobs"><a href="http://a4academics.com/jobs/job-search.php" rel="nofollow">Jobs</a></li>
+<li class="placement-test"><a href="http://a4academics.com/online-test">Placement Test</a></li>
+<li class="seminar-topics"><a href="http://a4academics.com/be-seminar-topics">Seminar Topics</a></li>
+<li class="be-projects"><a href="http://a4academics.com/final-year-be-project">B.E Projects</a></li>
+<li class="soft-skills"><a href="http://a4academics.com/soft-skills">Soft Skills</a></li>
+<li class="tutorials"><a href="http://a4academics.com/tutorials">Tutorials</a></li></ul>
+</div></div></div></div></div>
+<!-- /.NAVBAR -->
+<!-- New Page --><!-- /.NAVBAR --><!-- INNER CONTENTS -->
+
+<!-- Header Links  -->
+<div class="mylinks nomob">
+	<div class="containerdiv">
+<div style="float: left; margin: 5px;">
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:15px"
+     data-ad-client="ca-pub-9812771249471309"
+     data-ad-slot="2300072835"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+	<a style="margin-top: 5px;" target="_blank" href="http://a4academics.com/interview-questions/post-questions" rel="nofollow">Post a Question</a>
+	<a style="margin-top: 5px;" target="_blank" href="http://a4academics.com/study-abroad?as=2A0E73ED&amp;conc=E2A4FE22;" rel="nofollow">Study in Top US Colleges</a>
+	</div>
+</div>
+<!-- Header Links  -->
+
+
+<!-- MainBannerTop 
+<div class="row nomob">
+	<div style="width:728px;margin:0px auto; padding:20px 0px 0px 20px;">
+		<ins class="adsbygoogle"
+		     style="display:inline-block;width:728px;height:90px"
+		     data-ad-client="ca-pub-9812771249471309"
+		     data-ad-slot="4508618836"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+</div>
+MainBannerTop  -->
+
+<div class="inner-contents">
+<div class="container">
+<div class="col-md-8 inner-page-container">
+<section>
+<div id="wrapper" class="inner-content">
+<div id="main">
+
+<div id="system-message-container">
+<dl id="system-message">
+</dl>
+</div>
+
+<article class="item-page">
+
+
+
+
+
+<!--<hgroup>-->
+
+
+<!--<h1 class="article-heading">
+
+	Job Interview Questions and Answers - Technical and HR Interview
+</h1>-->
+
+
+
+		<h1 class="article-heading">
+
+			Database/SQL Interview Questions and Answers for Freshers, Experienced
+		</h1>
+
+
+
+<!--</hgroup>-->
+
+
+
+
+
+
+
+	
+	<div class="rating-hits">
+	<ul class="extravote-stars">
+    <li id="rating_411_x" class="current-rating" style="width:76%;"></li>
+    <li><a href="javascript:void(null)" onclick="javascript:JVXVote(411,1,1705,448,'x',1);" title="Very Poor" class="ev-one-star">1</a></li>
+    <li><a href="javascript:void(null)" onclick="javascript:JVXVote(411,2,1705,448,'x',1);" title="Poor" class="ev-two-stars">2</a></li>
+    <li><a href="javascript:void(null)" onclick="javascript:JVXVote(411,3,1705,448,'x',1);" title="Regular" class="ev-three-stars">3</a></li>
+    <li><a href="javascript:void(null)" onclick="javascript:JVXVote(411,4,1705,448,'x',1);" title="Good" class="ev-four-stars">4</a></li>
+    <li><a href="javascript:void(null)" onclick="javascript:JVXVote(411,5,1705,448,'x',1);" title="Very Good" class="ev-five-stars">5</a></li>
+  </ul>&nbsp;
+  <span id="extravote_411_x" class="extravote-count"></span>&nbsp;
+  <span>448</span> Votes
+ </div>
+
+
+
+
+
+
+ <dl class="article-info">
+
+ <dt class="article-info-term">Details</dt>
+
+
+
+
+
+
+		<dd class="modified">
+
+		Last Updated: 08 July 2015 &nbsp;&nbsp;
+		
+		Hits: 322942
+		</dd>
+
+
+
+
+<!-- 
+		<dd class="hits">
+		</dd>
+-->
+
+
+ </dl>
+ 
+<!--<div style="margin-top:7px;width:100%;margin-left:auto; margin-right: auto;margin-bottom:5px;">
+<div align="center"><div class="addthis_native_toolbox"></div></div></div>-->
+ 
+<hr class="line-green">
+
+
+
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+	<!-- -->
+
+	<p>Frequently asked Database, DBMS and SQL Interview Questions and answers for Freshers and Experienced developers and testers covering topics such as Record, Field, Table, Database Transactions, Locks, Normalization, Foreign Key, Primary Key, Constraints, SQL Commands, Pattern Matching, SQL Joins, Views, Stored procedure, Trigger, Cluster and Non cluster Index. These questions cover basic and advanced topics on Oracle, MS SQL Server and MySQL Database.</p>
+ 
+<h2>Interview Questions and answers on Database Basics</h2>
+<strong>1. What is DBMS ?</strong>
+<p>The database management system is a collection of programs that enables user to store, retrieve, update and delete information from a database.</p>
+<div class="row topad">
+	<ins id="top_ad_row" class="adsbygoogle"
+     style="display:inline-block;"
+     data-ad-client="ca-pub-9812771249471309"
+     data-ad-slot="8859197230"></ins>
+	 <script type="text/javascript">
+		var topAdContent = document.getElementById("top_ad_row")
+		topAdContent.setAttribute("class","adsbygoogle");
+		if (isMobile) {
+			topAdContent.style.height = "100px";
+			topAdContent.style.width = "320px";
+			topAdContent.setAttribute("data-ad-slot","8859197230");
+		} else {
+			topAdContent.style.height = "90px";
+			topAdContent.style.width = "728px";
+			topAdContent.setAttribute("data-ad-slot","5057382437");
+		}
+		(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+
+
+<strong>2. What is RDBMS ?</strong>
+<p>Relational Database Management system (RDBMS) is a database management system (DBMS) that is based on the relational model. Data from relational database can be accessed or reassembled in many different ways without having to reorganize the database tables. Data from relational database can be accessed using an API , Structured Query Language (SQL).</p>
+<div class="row">
+
+<!---->
+<div class="addDiv_article_bigNew">
+<!-- LargeRectArticleCenter-->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-9812771249471309"
+     data-ad-slot="3015572831"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
+</div>
+<!---->
+
+</div>
+
+
+<p><strong>3. What is SQL ?</strong></p>
+<div class="code">
+<pre>Structured Query Language(SQL) is a language designed specifically for communicating with databases. SQL is an ANSI (American National Standards Institute) standard.
+</pre>
+</div>
+<p><strong><br />4. What are the different type of SQL's statements ?</strong></p>
+<div>This is one of the frequently asked SQL Interview Questions to freshers. SQL statements are broadly classified into three. They are</div>
+<div class="code">
+<pre>1. <strong>DDL</strong> – Data Definition Language
+DDL is used to define the structure that holds the data. For example, Create, Alter, Drop and Truncate table.
+
+2. <strong>DML</strong>– Data Manipulation Language
+DML is used for manipulation of the data itself. Typical operations are Insert, Delete, Update and retrieving the data from the table. Select statement is considered as a limited version of DML, since it can't change data in the database. But it can perform operations on data retrieved from DBMS, before the results are returned to the calling function.<br /><br />3. <strong>DCL</strong>– Data Control Language <br />DCL is used to control the visibility of data like granting database access and set privileges to create tables etc. Example - Grant, Revoke access permission to the user to access data in database.</pre>
+</div>
+<p><br /><strong>5. What are the Advantages of SQL ?</strong></p>
+<div class="code">
+<pre>1. <strong>SQL is not a proprietary language</strong> used by specific database vendors. Almost every major DBMS supports SQL, so learning this one language will enable programmers to interact with any database like ORACLE, SQL ,MYSQL etc.<br />
+2. <strong>SQL is easy to learn</strong>. The statements are all made up of descriptive English words, and there aren't that many of them.
+<br />3. SQL is actually a very powerful language and by using its language elements you can perform very <strong>complex and sophisticated database operations</strong>.
+</pre>
+</div>
+<div class="job-openings" style="margin: 20px 0px;">Immediate Job Openings in <a href="http://a4academics.com/jobs/job-search.php?query=Java&amp;l=" target="_blank" rel="nofollow" style="margin: 0px 10px;">Java</a> <a href="http://a4academics.com/jobs/job-search.php?query=Dot%20Net&amp;l=" target="_blank" rel="nofollow" style="margin: 0px 10px;">.Net</a> <a href="http://a4academics.com/jobs/job-search.php?query=C%20Developer&amp;l=" target="_blank" rel="nofollow" style="margin: 0px 10px;">C Developer</a> <a href="http://a4academics.com/jobs/job-search.php?query=C++&amp;l=" target="_blank" rel="nofollow" style="margin: 0px 10px;">C++</a> <a href="http://a4academics.com/jobs/job-search.php?query=PHP&amp;l=" target="_blank" rel="nofollow" style="margin: 0px 10px;">PHP</a> <a href="http://a4academics.com/jobs/job-search.php?query=DBA&amp;l=" target="_blank" rel="nofollow" style="margin: 0px 10px;">DBA</a> - Apply Now</div>
+<p><strong><br />6. what is a field in a database ?</strong></p>
+<div class="code">
+<pre>A field is an area within a record reserved for a specific piece of data. <br /><br /><strong>Examples</strong>: Employee Name, Employee ID etc
+</pre>
+</div>
+<p><strong><br />7. What is a Record in a database ?</strong></p>
+<div class="code">
+<pre>A record is the collection of values / fields of a specific entity: i.e. an Employee, Salary etc. 
+</pre>
+</div>
+<p><br />Must Read - <span style="font-family: 'times new roman', times; font-size: large;"><a href="http://a4academics.com/interview-questions/53-database-and-sql/397-top-100-database-sql-interview-questions-and-answers-examples-queries" target="_blank">Top 100+ SQL Query Interview Questions and Answers</a></span> and <span style="font-family: 'times new roman', times; font-size: large;"><a href="http://a4academics.com/tutorials/24-sql-tutorial" target="_blank" rel="nofollow">SQL Tutorial</a></span><br /><br /><strong>8. What is a Table in a database ?</strong></p>
+<div class="code">
+<pre>A table is a collection of records of a specific type. For example, employee table, salary table etc.</pre>
+</div>
+<div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_default_411"></div>
+
+</div>
+<!---->
+<div class="addDiv_articleBottom">
+<script type="text/javascript">
+		if (isMobile) {
+			document.write('<ins id="btm_ad_row" class="adsbygoogle dtmmobrect" data-ad-client="ca-pub-9812771249471309" data-ad-slot="8532826035"></ins> ');
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		} else {
+			document.write('<div class="btmdfp" id="div-gpt-ad-1439052618253-0"></div>');
+		}
+</script>
+
+	<!--<ins id="btm_ad_row" class="adsbygoogle"
+     style="display:inline-block;"
+     data-ad-client="ca-pub-9812771249471309"
+     data-ad-slot="8008529231"></ins>
+	 <script type="text/javascript">
+		var topAdContent = document.getElementById("btm_ad_row")
+		topAdContent.setAttribute("class","adsbygoogle");
+		if (isMobile) {
+			topAdContent.style.height = "280px";
+			topAdContent.style.width = "336px";
+			topAdContent.setAttribute("data-ad-slot","8532826035");
+		} else {
+			topAdContent.style.height = "90px";
+			topAdContent.style.width = "728px";
+			topAdContent.setAttribute("data-ad-slot","8008529231");
+		}
+		(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>-->
+</div>
+<!---->
+	
+		
+		<div class="articlepage">Page 1 of 5</div><div class="pagination"><ul>
+			<li>
+
+					<a style="font-style: normal;" href="/interview-questions/53-database-and-sql/411-sql-interview-questions-and-answers-database?showall=1&amp;limitstart=" class="toclink">Pages</a>
+
+			</li>
+			<li class="pagenavdisplay pagination-start">Prev </li><li>
+			<span class="pagenav">1</span>
+		    </li>
+				<li>
+					<a href="/interview-questions/53-database-and-sql/411-sql-interview-questions-and-answers-database?showall=&amp;start=1" class="pagenav">2</a>
+				</li>
+				
+				<li>
+					<a href="/interview-questions/53-database-and-sql/411-sql-interview-questions-and-answers-database?showall=&amp;start=2" class="pagenav">3</a>
+				</li>
+				
+				<li>
+					<a href="/interview-questions/53-database-and-sql/411-sql-interview-questions-and-answers-database?showall=&amp;start=3" class="pagenav">4</a>
+				</li>
+				
+				<li>
+					<a href="/interview-questions/53-database-and-sql/411-sql-interview-questions-and-answers-database?showall=&amp;start=4" class="pagenav">5</a>
+				</li>
+				<li class="pagenavdisplay pagination-end"><a rel="nofollow" class="pagenav" href="/interview-questions/53-database-and-sql/411-sql-interview-questions-and-answers-database?showall=&amp;start=1">Next &gt;&gt;</a> </li></ul></div>
+	 
+
+<div>
+
+
+
+
+
+	
+
+	
+    
+</div>
+</article>
+
+
+
+
+
+
+
+
+
+</div></div>
+</section>
+
+<!-- DFP BigRectangle 
+<div class="row nomob">
+<div class="moduletablenob squaread indjob">
+<div id='div-gpt-ad-1436697003239-1' style='height:280px; width:336px;'>
+</div>
+</div>
+</div>
+ DFP BigRectangle -->
+
+<!-- breadcrumbs -->
+<div class="breadcrumbs">
+<span class="showHere">You are here: </span><div style="display:inline" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://a4academics.com/" class="pathway"><span itemprop="title">Home</span></a></div> <span>&gt;</span> <div style="display:inline" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://a4academics.com/interview-questions" class="pathway"><span itemprop="title">Interview Questions</span></a></div> <span>&gt;</span> <div style="display:inline" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://a4academics.com/interview-questions/53-database-and-sql" class="pathway"><span itemprop="title">Database and SQL Interview Questions and Answers</span></a></div> <span>&gt;</span> <div style="display:inline" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a itemprop="url" href="http://a4academics.com/interview-questions/53-database-and-sql/411-sql-interview-questions-and-answers-database" class="pathway"><span itemprop="title">Database/SQL Interview Questions and Answers for Freshers, Experienced</span></a></div>
+</div>
+
+<!-- /.breadcrumbs -->
+
+<!-- DISQUS COMMENTS -->
+<div class="col-md-2">
+<script type="text/javascript">
+console.log("53");
+</script>
+</div>
+<!-- DISQUS COMMENTS END-->
+
+</div><div>
+<section class="col-md-4 featured-posts">
+
+<!-- LinkAd1 -->
+<div class="moduletablenob linkad">
+<ins class="adsbygoogle"
+     style="display:inline-block;width:200px;height:90px"
+     data-ad-client="ca-pub-9812771249471309"
+     data-ad-slot="6458533639"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<!-- LinkAd1 -->
+
+<!-- LargeRectangleTopRSB
+<div class="moduletable nomob">
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-9812771249471309"
+     data-ad-slot="6410070437"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+ Square Ad -->
+
+<!--Featured Post Start-->
+<div class="moduletable">
+<h4>Popular Posts</h4>
+<ul class="relateditems"><li><a  class="popularPost" target="_blank" href="http://a4academics.com/interview-questions/73-human-resource/619-hr-interview-questions-for-freshers">HR Interview Questions and Answers</a></li>
+<li><a  target="_blank" class="popularPost" href="http://a4academics.com/interview-questions/53-database-and-sql/411-sql-interview-questions-and-answers-database">Database and SQL Interview Questions and Answers for Freshers, Experienced</a></li>
+<li><a  target="_blank"  class="popularPost" href="http://a4academics.com/interview-questions/53-database-and-sql/397-top-100-database-sql-interview-questions-and-answers-examples-queries">SQL Query Interview Questions and Answers with Examples</a></li>
+<li><a  target="_blank"  class="popularPost" href="http://a4academics.com/interview-questions/54-core-java-swing/506-core-java-interview-questions-and-answers">Java Interview Questions and Answers</a></li>
+<li><a  target="_blank"  class="popularPost" href="http://a4academics.com/careers-guidance-jobs/50-career-guidance-engineering-jobs/486-careers-in-electronics-and-communication-engineering-for-freshers-jobs-job-opportunities">Careers Choices and Job Opportunities for Electronics and Communication Engineers</a></li></ul>
+</div>
+<!--Featured Post End-->
+
+<!--LinkAd2 
+<div class="moduletablenob linkad">
+<ins class="adsbygoogle"
+     style="display:inline-block;width:200px;height:90px"
+     data-ad-client="ca-pub-9812771249471309"
+     data-ad-slot="7935266838"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+LinkAd2 -->
+
+<!--<section class="col-md-4 featured-posts">-->
+
+<div class="moduletable">
+ <h3>Related Articles</h3>
+ <ul class="relateditems">
+<li>
+	<a class="related-articles" href="/interview-questions/53-database-and-sql/397-top-100-database-sql-interview-questions-and-answers-examples-queries">
+				Top 80 + SQL Query Interview Questions and Answers with Examples</a>
+</li>
+<li>
+	<a class="related-articles" href="/interview-questions/53-database-and-sql/501-oracle-interview-questions-and-answers-sql">
+				Oracle Interview Questions and Answers on SQL Queries and Database Theory</a>
+</li>
+<li>
+	<a class="related-articles" href="/interview-questions/53-database-and-sql/679-advanced-sql-interview-questions">
+				Advanced SQL Interview Questions and Answers</a>
+</li>
+<li>
+	<a class="related-articles" href="/interview-questions/53-database-and-sql/778-sql-server">
+				SQL Server Interview Questions and Answers</a>
+</li>
+<li>
+	<a class="related-articles" href="/interview-questions/52-dot-net-interview-questions/417-c-oops-interview-questions-and-answers">
+				C# OOPS Interview Questions and Answers</a>
+</li>
+<li>
+	<a class="related-articles" href="/interview-questions/52-dot-net-interview-questions/421-net-interview-questions-and-answers-on-net-framework">
+				.Net Framework Interview Questions and Answers</a>
+</li>
+<li>
+	<a class="related-articles" href="/interview-questions/52-dot-net-interview-questions/488-ado-net-interview-questions-and-answers">
+				ADO.Net Interview Questions and Answers for Freshers, Experienced</a>
+</li>
+<li>
+	<a class="related-articles" href="/interview-questions/52-dot-net-interview-questions/706-asp-net">
+				ASP.Net Interview Questions and Answers</a>
+</li>
+<li>
+	<a class="related-articles" href="/interview-questions/52-dot-net-interview-questions/713-asp-net-mvc">
+				ASP.Net MVC Interview questions and Answers</a>
+</li>
+<li>
+	<a class="related-articles" href="/interview-questions/52-dot-net-interview-questions/719-wcf-interview-questions">
+				WCF Interview Questions and Answers</a>
+</li>
+<li>
+	<a class="related-articles" href="/interview-questions/52-dot-net-interview-questions/721-asp-net-web-api-interview">
+				ASP.Net Web API Interview Questions</a>
+</li>
+<li>
+	<a class="related-articles" href="/interview-questions/54-core-java-swing/412-oops-and-core-java-interview-questions-with-answers">
+				Java OOPS Interview Questions and Answers</a>
+</li>
+<li>
+	<a class="related-articles" href="/interview-questions/54-core-java-swing/506-core-java-interview-questions-and-answers">
+				Core Java Interview Questions and Answers</a>
+</li>
+<li>
+	<a class="related-articles" href="/interview-questions/54-core-java-swing/564-advanced-java-experienced">
+				Top Advanced Java Interview Questions and Answers</a>
+</li>
+</ul>
+</div>
+
+
+<!--</section>-->
+
+<div id='div-gpt-ad-1439052618253-2'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1439052618253-2'); });
+</script>
+</div>
+
+<!-- New Popular Category Start-->
+<div class="moduletable">
+<h4>Popular Categories</h4>
+<ul class="relateditems popcatul">
+<li><a target="_blank" class="popularCategory" href="http://a4academics.com/interview-questions/53-database-and-sql">Database Interview Questions and Answers</a></li>
+<li><a target="_blank" class="popularCategory" href="http://a4academics.com/interview-questions/52-dot-net-interview-questions">.Net Interview Questions and Answers</a></li>
+<li><a target="_blank" class="popularCategory" href="http://a4academics.com/interview-questions/54-core-java-swing">Core Java Interview Questions and Answers</a></li>
+<li><a target="_blank" class="popularCategory" href="http://a4academics.com/interview-questions/57-c-plus-plus">C Interview Questions and Answers</a></li>
+<li><a target="_blank" class="popularCategory" href="http://a4academics.com/interview-questions/73-human-resource">HR Interview Questions and Answers</a></li>
+<li><a target="_blank" class="popularCategory" href="http://a4academics.com/careers-guidance-jobs/68-quantitative-aptitude">Aptitude Test - Tips, Tricks and Shortcuts</a></li>
+<li><a target="_blank" class="popularCategory" href="http://a4academics.com/be-seminar-topics/17-be-it-cse-computer-science-seminar-topics">Seminar Topics for CSE, MCA, I.T</a></li>
+<li><a target="_blank" class="popularCategory" href="http://a4academics.com/be-seminar-topics/18-be-ece-electronics-and-communication-seminar-topics">Seminar Topics for ECE</a></li>
+<li><a target="_blank" class="popularCategory" href="http://a4academics.com/careers-guidance-jobs/78-mba-careers">MBA after Engineering - Courses &amp; Top Colleges</a></li>
+</ul>
+</div>
+<!-- New Popular Category End-->
+
+<!-- DFP RSB_2_336x280
+<div class="moduletablenob squaread nomob">
+<div id="div-gpt-ad-1437177695056-1" style='height:280px; width:336px;'>
+</div>
+</div>
+DFP RSB_2_336x280 -->
+
+<!--Email Subscription -->
+<div class="emailwidget" style="border: 1px solid #DEDEDE;">
+<div class="title">Email Newsletter</div>
+<div class="newscontent">Enter your Email Address and get interesting updates</div>
+<div class="newsletter" style="overflow: auto;">
+<form action="https://tinyletter.com/a4academics" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/a4academics', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+<input name="email" id="tlemail" onfocus="if (this.value == 'Your email Address...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Your email Address...';}" value="Your email Address..." type="text">
+<input id="tlesubmit" value="Subscribe" type="submit">
+<input value="1" name="embed" type="hidden">
+</form>
+</div></div>
+<!--Email Subscription Ends-->
+
+<!-- CE Widget Start
+<div id="CEWidget" class="CEWidget">
+	<div class="CEWidgethead">
+		<b>MS,Phd from Top US Colleges</b>
+	</div>
+	<div id="campusexplorer1420572626615">
+	<h3>Get Your Degree</h3>
+		<p>Powered by <a href="http://www.campusexplorer.com/?s=sa-AECCD0DA" rel="nofollow">Campus Explorer</a></p>
+	</div>
+</div>
+CE Widget End -->
+
+<!-- LinkAd3 
+<div class="moduletablenob linkad">
+<ins class="adsbygoogle"
+     style="display:inline-block;width:200px;height:90px"
+     data-ad-client="ca-pub-9812771249471309"
+     data-ad-slot="1082428037"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+LinkAd3 -->
+
+
+
+<script type="text/javascript">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+var isScrollAdvDisplayed = false;
+var CampusExplorerQ = CampusExplorerQ || [];
+
+function onJQLoadHandler() {
+  var isScrollAdvIniated = false;
+  
+  var scrollwidth = 600;
+  var wi = window, docu = document, el = docu.documentElement, bo = docu.getElementsByTagName('body')[0], width = wi.innerWidth || el.clientWidth || bo.clientWidth;
+  if (isMobile) {
+    scrollwidth = 1000;
+  }
+  var scrollFn = function () {
+    if (!isScrollAdvIniated && $(window).scrollTop() > scrollwidth) {
+      isScrollAdvIniated = true;
+      $(window).off("scroll", scrollFn);
+	if(!isMobile)
+	{
+	 loadSrollAdv();
+	}
+	
+    }
+  };
+  $(window).scroll(scrollFn);
+  if(typeof onJQLoadHandlerSecondary != 'undefined') {
+    onJQLoadHandlerSecondary();
+  }
+	// Using jQuery Event API v1.3
+	$('.popularCategory').on('click', function() {
+	  ga('send', 'event', 'popularCategory', 'click', 'popularCategory');
+	});
+	$('.popularPost').on('click', function() {
+	  ga('send', 'event', 'popularPost', 'click', 'popularPost');
+	});
+	$('.related-articles').on('click', function() {
+          ga('send', 'event', 'related-articles', 'click', 'related-articles');
+    });
+	$('.jobsLink').on('click', function() {
+          ga('send', 'event', 'jobsLink', 'click', 'jobsLink');
+    });
+$('.CEWidget').on('click', function() {
+          ga('send', 'event', 'CampusExplorer Widget', 'click', 'CampusExplorer Widget');
+    });
+$('.ce-clickout-block').on('click', function() {
+          ga('send', 'event', 'CE-ClickOut', 'click', 'CE-ClickOut');
+    });
+}
+
+function loadCEWidget(){
+	$("#CEWidget").show();
+	CampusExplorerQ.push({
+			element: "campusexplorer1420572626615",
+			source: "sa-AECCD0DA",
+			area_of_study: "2A0E73ED",
+			concentration: "E2A4FE22"
+	});
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "http://widget.campusexplorer.com/js/widget.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'ce-widget-js'));
+	//document.getElementById("CEWidget").getElementsByTagName("h3").innerHTML="Get MS Degree from Top US Colleges";
+}
+
+function loadIndeedIframe() {
+	var locationPath = window.location.pathname;
+	var query = "software engineer";
+	
+	if (locationPath.indexOf("electronics") > -1) {
+		query = "electronics";
+	} else if (locationPath.indexOf("dot-net") > -1) {
+		query = ".net";
+	} else if (locationPath.indexOf("human-resource") > -1) {
+		query = "hr";
+	} else if (locationPath.indexOf("c-plus-plus") > -1) {
+		query = "c developer";
+	} else if (locationPath.indexOf("j2ee") > -1) {
+		query = "j2ee";
+	} else if (locationPath.indexOf("java") > -1) {
+		query = "java";
+	} else if (locationPath.indexOf("database") > -1) {
+		query = "database";
+	} else if (locationPath.indexOf("sql") > -1) {
+		query = "sql";
+	} else if (locationPath.indexOf("mechanical") > -1) {
+		query = "mechanical";
+	} else if (locationPath.indexOf("electrical") > -1) {
+		query = "electrical";
+	} else if (locationPath.indexOf("mba") > -1) {
+		query = "mba";
+	} else if (locationPath.indexOf("civil") > -1) {
+		query = "civil";
+	} else if (locationPath.indexOf("chemical") > -1) {
+		query = "chemical";
+	} else if (locationPath.indexOf("instrumentation") > -1) {
+		query = "instrumentation";
+	} else if (locationPath.indexOf("drools") > -1) {
+		query = "drools";
+	} else if (locationPath.indexOf("c-programming") > -1) {
+		query = "c developer";
+	}
+	
+	$("#indeed-iframe-parent").show();
+	$('#indeed-iframe').attr('src', "http://a4academics.com/jobs/jobs-iframe.php?query=" + query)
+}
+
+function loadSrollAdv() {
+	if (!isScrollAdvDisplayed) {
+		isScrollAdvDisplayed = true;
+	
+		(function() {
+		  var gads = document.createElement('script');
+		  gads.async = true;
+		  gads.type = 'text/javascript';
+		  var useSSL = 'https:' == document.location.protocol;
+		  gads.src = (useSSL ? 'https:' : 'http:') +
+		  '//www.googletagservices.com/tag/js/gpt.js';
+		  var node = document.getElementsByTagName('script')[0];
+		  node.parentNode.insertBefore(gads, node);
+		})();
+    
+	  googletag.cmd.push(function() {
+googletag.defineSlot('/120347474/Bottom_Leaderboard', [728, 90], 'div-gpt-ad-1439052618253-0').addService(googletag.pubads());
+googletag.defineSlot('/120347474/Custome328x900', [[336, 700],[336, 900],[336, 600],[300, 600]], 'div-gpt-ad-1439052618253-2').addService(googletag.pubads());
+		    googletag.pubads().enableSingleRequest();
+		    googletag.enableServices();
+		  });
+
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1439052618253-0'); });
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1439052618253-2'); });
+		//loadCEWidget();
+	}
+}
+</script>
+
+</section>
+</div></div>
+
+
+</div>
+<!-- /.INNER CONTENTS -->
+<!-- /New Page -->
+<!-- FOOTER -->
+<footer>
+<div class="footer-nav">
+<div class="nav-col1">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="http://a4academics.com">Home</a></li>
+<li><a href="http://a4academics.com/careers-guidance-jobs">Careers Jobs</a></li>
+<li><a href="http://a4academics.com/interview-questions">Interview Questions</a></li>
+<li><a href="http://a4academics.com/online-test">Placement Test</a></li>
+<li><a href="http://a4academics.com/be-seminar-topics">Seminar Topics</a></li>
+</ul>
+</div>
+<div class="nav-col2">
+<ul><li><a href="http://a4academics.com/final-year-be-project">B.E Projects</a></li>
+<li><a href="http://a4academics.com/tutorials">Tutorials</a></li>
+<li><a href="http://a4academics.com/blog">Blog</a></li>
+<li><a href="http://forum.a4academics.com">Forum</a></li>
+<li><a rel="nofollow" href="http://a4academics.com/contribute">Contribute Projects & Seminars</a></li></ul>
+</div>
+<div class="contact">
+<h4>Quick Contacts</h4>
+<ul>
+<li>E: <a href="mailto:mail@a4academics.com">info@a4academics.com</a></li>
+<li>W: <a href="http://a4academics.com">www.a4academics.com</a></li>
+</ul></div>
+<div class="social">
+<h4>Follow us on</h4>
+<ul>
+<li><a rel="nofollow" href="https://www.facebook.com/a4academics" class="facebook" target="_blank">facebook</a></li>
+<li><a rel="nofollow" href="https://twitter.com/a4academics" class="twitter" target="_blank">twitter</a></li>
+<li><a rel="nofollow" href="https://www.linkedin.com/company/5128465" class="linked-in" target="_blank">linkedin</a></li>
+<li><a rel="nofollow" href="https://plus.google.com/+A4academics" class="google-plus" target="_blank">GooglePlus</a></li>
+</ul>
+</div>
+<br class="clear"/>
+</div>
+<div class="copyright">
+<p><span>Copyright &copy; 2014 A4Academics. All rights reserved.</span><a href="http://a4academics.com/terms-and-conditions">Privacy & Terms</a>
+  &nbsp;&nbsp;&nbsp;<a href="http://a4academics.com/about-us">About Us</a>&nbsp;&nbsp;&nbsp;<a href="http://a4academics.com/contact-us">Contact Us</a>&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://a4academics.com/518-advertise-with-a4academics">Advertise</a></p>
+</div>
+<div class="a4a-branding">
+<div>
+<ul>
+<li class="col1">&nbsp;</li>
+<li class="col2">&nbsp;</li>
+<li class="col3">&nbsp;</li>
+<li class="col4">&nbsp;</li>
+<li class="col5">&nbsp;</li>
+<li class="col6">&nbsp;</li>
+<li class="col7">&nbsp;</li>
+</ul>
+</div></div>
+</footer>
+<!-- /.FOOTER -->
+<!--script src="http://a4academics.com/templates/beez3/javascript/bootstrap.min.js" async></script-->
+<!--script src="http://a4academics.com/templates/beez3/javascript/docs.min.js" async></script-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-44127993-1', 'a4academics.com');
+  ga('send', 'pageview');
+</script>
+<script src="http://a4academics.com/js/jquery.js" async></script>
+</body>
+</html>
+
+
